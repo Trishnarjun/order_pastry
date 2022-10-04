@@ -50,6 +50,8 @@ a {
 a:hover {
   opacity:0.5;
 }
+
+
 ul {
   padding: 0;
   list-style-type: none;
@@ -75,8 +77,7 @@ nav {
   margin: 0;
 }
 
-#menuToggle input
-{
+#menuToggle input {
   display: flex;
   width: 40px;
   height: 32px;
@@ -86,8 +87,7 @@ nav {
   z-index: 2;
 }
 
-#menuToggle span
-{
+#menuToggle span {
   display: flex;
   width: 29px;
   height: 2px;
@@ -102,35 +102,31 @@ nav {
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+// burger animation to the close icon
+
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-3px, -1px);
   background: #36383F;
 }
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu
-{
+#menu {
   position: absolute;
   width: 180px;
   height: 400px;
@@ -145,13 +141,42 @@ nav {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
+#menu li {
   padding: 10px 0;
   transition-delay: 2s;
 }
 
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul, a:active {
   transform: none;
+
 }
+
+a:active, #menuToggle span {
+  transform: 0;
+
+}
+
+.title1 {
+
+  font-family: 'Raleway', sans-serif;
+  padding: 2rem;
+  font-size: 1.2rem;
+  background: #c5daf7;
+  margin: 1rem;
+
+}
+
+.title +  img {
+  width: 76vw;
+  padding: 0;
+}
+
+.titleAbout {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding: 2rem;
+  font-size: 1.2rem;
+  background: #c5daf7;
+  margin: 1rem;
+}
+

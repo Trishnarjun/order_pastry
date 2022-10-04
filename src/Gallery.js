@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { Link } from 'react-router-dom';
 
 function Gallery() {
@@ -18,9 +17,9 @@ function Gallery() {
             <h1>Pastry_</h1>
           </div>
             <li><Link to="/">Home</Link></li>
-            <li><a href="#">About</a></li>
+            <li><Link to="/about">About</Link></li>
             <li><Link to="/gallery">Gallery</Link></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
       </div>
     </nav>
@@ -47,7 +46,6 @@ function Gallery() {
       <img src={require('./images/Img14.png')} alt="first project"/>
       <img src={require('./images/Img15.png')} alt="first project"/>
       <img src={require('./images/Img16.png')} alt="first project"/>
-      <img src={require('./images/Img17.png')} alt="first project"/>
       <img src={require('./images/Img18.png')} alt="first project"/>
       <img src={require('./images/Img19.png')} alt="first project"/>
       <img src={require('./images/Img20.png')} alt="first project"/>
